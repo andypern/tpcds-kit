@@ -7,7 +7,7 @@ dir=$2
 threads=$3
 
 binary=/usr/local/bin/dsdgen
-# annoying..
+# this is because the tsidx file needs to exist in the CWD.
 cd /root
 
 # iterate through each thread.
