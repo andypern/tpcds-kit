@@ -14,7 +14,7 @@ cd /root
 
 for t in `seq $threads`; do
    echo "kicking off thread $t"
-   $binary -scale $scale -dir $dir -parallel $threads -child $t >/dev/null 2>/dev/null &
+   $binary -f -terminate n -scale $scale -dir $dir -parallel $threads -child $t >/dev/null 2>/dev/null &
    genpids="$genpids $!"
 done
 
